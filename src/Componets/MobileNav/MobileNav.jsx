@@ -17,12 +17,12 @@ const MobileNav = () => {
 
   return (
     <div>
-      <div className="w-full flex">
+      <div className="w-full flex ">
         {icon.map((item, index) => (
           <Link
             to={item.link}
             key={index}
-            className={`list-none flex items-center gap-x-4 h-12 ml-7 hover:bg-[#F2F2F2] hover:rounded-lg w-14 lg:w-[90%]  ${
+            className={`list-none flex items-center  gap-x-11 h-12 ml-7 hover:bg-[#F2F2F2] hover:rounded-lg w-14 lg:w-full  ${
               active === item.name ? "bg-[#F2F2F2] rounded-lg" : ""
             }`}
             onClick={() => setActive(item.name)}

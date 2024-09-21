@@ -7,7 +7,7 @@ import Home from "./Componets/Home/Home";
 
 const App = () => {
   return (
-    <div>
+    <div className="min-w-full min-h-screen">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Instagram />} />

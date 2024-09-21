@@ -62,14 +62,14 @@ const Navbar = () => {
           <img
             src="https://seeklogo.com/images/I/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png"
             alt=""
-            className="block lg:hidden w-5 ml-7 mb-10"
+            className="block lg:hidden w-5 ml-5 mb-10"
           />
         </div>
         {icon.map((items, index) => (
           <Link
             to={items.link}
             key={index}
-            className="list-none flex items-center gap-y-6 gap-x-4  hover:bg-[#F2F2F2] h-12 hover:rounded-lg w-14 lg:w-[90%] ml-5"
+            className="list-none flex items-center gap-y-6 gap-x-4  hover:bg-[#F2F2F2] h-12 hover:rounded-lg w-14 lg:w-[10vw] ml-5 p-2"
           >
             <img
               src={items.icon}
