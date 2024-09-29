@@ -22,17 +22,30 @@ const Login = () => {
       console.log("Logging in with:", username, password);
     }
   };
-
   return (
     <div>
-      <div className="flex flex-col w-full min-h-[100vh] justify-center items-center ">
      
-       
-          <div className="flex flex-col justify-center items-center  ">
+        {/* Left Side */}
+        <div className="flex justify-center">
+          <div className=" hidden md:block">
+            <img
+              src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk"
+              alt=""
+              className=" mt-5 lg:mt-10"
+            />
+            <div className=" top-[45px] lg:top-[65px] md:left-[155px] lg:left-[320px] xl:left-[400px] ">
+              <img
+                src="https://tazzafood.com/wp-content/uploads/2024/07/screenshot1.png"
+                alt=""
+              />
+             </div>
+          </div>
+          {/* RightSide */}
+          <div className="  ">
             <div className=" sm:border sm:border-[#DBDBDB] mt-5 md:mt-10 sm:w-[350px] sm:h-[450px]">
               <div className="flex justify-center items-center">
                 <img
-                  className="w-52 mt-7"
+                  className="w-52 mt-7 filter invert"
                   src="https://logos-world.net/wp-content/uploads/2020/05/Instagram-Logo-2016-present.png"
                   alt=""
                 />
@@ -57,7 +70,7 @@ const Login = () => {
                 <NavLink to="">
                 <Button onClick={handleLogin} text="Log in" />
                 </NavLink>
-               
+             
               </div>
               <div className="flex justify-center items-center gap-5 mt-5">
                 <div className="w-[100px] border-[.1px] border-[#DBDBDB]" />
@@ -65,6 +78,7 @@ const Login = () => {
                 <div className="w-[100px] border-[.1px] border-[#DBDBDB]" />
               </div>
               <div className="flex justify-center">
+                <NavLink to="">
                 <button className="flex  items-center gap-2 cursor-pointer mt-5">
                   <span>
                     <img
@@ -77,6 +91,8 @@ const Login = () => {
                     Log in with Facebook
                   </span>
                 </button>
+                </NavLink>
+                
               </div>
 
               <div className="mt-3 flex justify-center items-center ">
@@ -113,9 +129,9 @@ const Login = () => {
           </div>
         </div>
         <Footer />
-     
+    
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

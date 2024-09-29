@@ -5,21 +5,13 @@ const ForgetPassword = () => {
   return (
     <div>
       <div className="min-h-[100vh] ">
-        <div className="border-b-[.1px] border-[#DBDBDB] ">
-            <Link to="/">
-            <img
-            className="w-28 ml-52"
-            src="https://logos-world.net/wp-content/uploads/2020/05/Instagram-Logo-2016-present.png"
-            alt=""
-          /></Link>
-         
-        </div>
-        <div className="flex justify-center flex-col items-center mt-5 ">
-          <div className=" sm:border sm:border-[#DBDBDB]   sm:w-[400px] sm:h-[600px] flex  items-center flex-col">
+       
+        <div className="flex justify-center flex-col items-center mt-5   ">
+          <div className=" sm:border sm:border-[#DBDBDB] sm:w-[400px] sm:h-[600px] flex  items-center flex-col">
             <img
               src="https://external-preview.redd.it/XhP2DOmFBwJfNFThk_UWN_DuTMt-IOJEIpiIKdoyFdM.jpg?auto=webp&s=f41311696afaba35ca7de53cb1cbac243ee9005f"
               alt=""
-              className=""
+              className="filter invert"
             />
             <div>
               <h1 className="text-center font-[600] text-[17px]">

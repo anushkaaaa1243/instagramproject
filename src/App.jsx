@@ -2,20 +2,23 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Componets/Login/Login";
 import Signup from "./Componets/Signup/Signup";
 import ForgetPassword from "./Componets/ForgetPassword/ForgetPassword";
-import Instagram from "./Componets/Instagram/Instagram";
-import Home from "./Componets/Home/Home";
+
+import PageLayout from "./Componets/Layouts/PageLayout/PageLayout";
+import HomePage from "./Componets/HomePage/HomePage";
 
 const App = () => {
   return (
-    <div className="min-w-full min-h-screen">
+    <div className=" min-h-screen bg-black text-white flex justify-center items-center">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Instagram />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/forget-password" element={<ForgetPassword />} />
-          <Route path="/home" element={<Home />}></Route>
-        </Routes>
+        <PageLayout>
+          <Routes>
+          
+            <Route path="/" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/forget-password" element={<ForgetPassword />} />
+            <Route path="/sidebar" element={<HomePage/>}></Route>
+          </Routes>
+        </PageLayout>
       </BrowserRouter>
     </div>
   );

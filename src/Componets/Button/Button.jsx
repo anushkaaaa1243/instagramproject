@@ -1,11 +1,11 @@
 
 
-const Button = ({ text, onClick, className ,icon}) => {
+const Button = ({  text, onClick, className ,icon}) => {
   return (
     <div>
        <button
                  onClick={onClick}
-                className={`border w-[270px] bg-[#0095F6] text-white font-semibold text-base mt-2 h-10 rounded-xl flex items-center justify-center ${className}`}
+                className={`border border-[#0095F6] w-[270px] bg-[#0095F6] text-white font-semibold text-base mt-2 h-10 rounded-lg flex items-center justify-center ${className} `}
                 
               >
                {icon} {text}

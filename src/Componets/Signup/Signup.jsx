@@ -8,13 +8,13 @@ const SignUp = () => {
   return (
     <div>
       <div className="flex flex-col justify-center items-center mt-1">
-      <div className="flex flex-col  justify-center items-center  ">
+    
 
 
           <div className=" sm:border sm:border-[#DBDBDB] mt-3  sm:w-[350px] sm:h-[660px] ">
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center ">
               <img
-                className="w-52 mt-7"
+                className="w-52 mt-7 filter invert"
                 src="https://logos-world.net/wp-content/uploads/2020/05/Instagram-Logo-2016-present.png"
                 alt=""
               />
@@ -63,7 +63,7 @@ const SignUp = () => {
    
           <div className="flex gap-2 mt-5 sm:w-[350px] sm:border sm:border-[#DBDBDB] h-16 justify-center sm:items-center text-[14px]">
             <h6> Have an account?</h6>
-            <Link  to="/login" className="text-[#0095F6] font-semibold">
+            <Link  to="/" className="text-[#0095F6] font-semibold">
              Log in
             </Link>
            
@@ -86,7 +86,7 @@ const SignUp = () => {
         </div>
         <Footer/>
       </div>
-    </div>
+
   )
 }
 
