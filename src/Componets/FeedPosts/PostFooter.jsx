@@ -42,13 +42,13 @@ const PostFooter = () => {
         </div>
       </div>
       <span className="text-lg">
-        {likesCount} {likesCount === 1 ? "Like" : "Likes"}
+        {likesCount} {likesCount === 1 ? "Likes" : "Like"}
       </span>
       <div className="flex justify-between items-center w-full">
         <input
           type="text"
           placeholder="Add a comment..."
-          className="border text-[18px] p-1 w-full outline-none text-white border-none bg-black"
+          className="border text-[18px] p-1 w-full outline-none bg-black border-none "
         />
         <button type="submit" className="ml-2 text-white hover:text-blue-600">
           Post
