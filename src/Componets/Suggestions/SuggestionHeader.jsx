@@ -6,21 +6,23 @@ const Suggestion = () => {
   return (
     <div className="py-16 hidden lg:block ">
       <div className="flex   w-full ">
-        <Link to="/profile">
-          <div className="flex  justify-between gap-20">
-            <div className="flex gap-2">
-              <img
-                src={profile}
-                className="w-12 h-12 rounded-full object-cover overflow-hidden"
-              />
-              <div>
-                <p>Priti Sharma</p>
-                <p>Priti</p>
-              </div>
+        <div className="flex  justify-between gap-20">
+          <div className="flex gap-2">
+          <Link to="/">
+            <img
+              src={profile}
+              className="w-12 h-12 rounded-full object-cover overflow-hidden"
+            />
+              </Link>
+            <div>
+              <p>Priti Sharma</p>
+              <p>Priti</p>
             </div>
-            <p className="text-[#80acd6] font-semibold">Switch</p>
           </div>
-        </Link>
+       
+            <p className="text-[#80acd6] font-semibold">Switch</p>{" "}
+        
+        </div>
       </div>
 
       <Suggestions />
